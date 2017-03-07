@@ -1,0 +1,409 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    margin-top: 0px;
+    position: relative;
+}
+
+#page-title {
+    font-size: 2.5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300!important;
+    margin: 7px!important;
+    color: #3d3e42!important;
+}
+
+.title-h2 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    font-weight: 300!important;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+}
+
+h2 {
+    color: white!important;
+}
+
+header {
+    position: relative;
+    background-image: url("../images/head.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-origin: border-box;
+    background-clip: padding-box;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#headerTextDiv {
+    height: 10%;
+    width: 40%;
+    margin: auto;
+    color: #3d3e42;
+    position: relative;
+    top: 45%;
+    transform: translate(-0%, -50%);
+    padding: 12px;
+    box-shadow: 0 15px 15px -15px #333, 0 -15px 15px -15px #333;
+}
+
+.screen-content {
+    height: 100vh;
+    width: 100%;
+    background-color: #3d3e42;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #9099a0;
+}
+
+.row {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul {
+    list-style: none;
+}
+
+.skill-percentage {
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 16px;
+}
+
+.skill-percentage::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #4a4e51;
+    display: block;
+    margin-top: 3px;
+}
+
+.skill-percentage::before {
+    content: "";
+    height: 6px;
+    background: #66cc99;
+    position: absolute;
+    margin-top: 3px;
+    bottom: 0;
+}
+
+.skill-percentage:nth-child(1)::before {
+    width: 85%;
+    -webkit-animation: skill_1 0.6s ease;
+    animation: skill_1 0.6s ease;
+}
+
+.skill-percentage:nth-child(2)::before {
+    width: 70%;
+    -webkit-animation: skill_2 0.6s ease;
+    animation: skill_2 0.6s ease;
+}
+
+.skill-percentage:nth-child(3)::before {
+    width: 65%;
+    -webkit-animation: skill_3 0.6s ease;
+    animation: skill_3 0.6s ease;
+}
+
+.skill-percentage:nth-child(4)::before {
+    width: 50%;
+    -webkit-animation: skill_4 0.6s ease;
+    animation: skill_4 0.6s ease;
+}
+
+.skill-percentage:nth-child(5)::before {
+    width: 70%;
+    -webkit-animation: skill_5 0.6s ease;
+    animation: skill_5 0.6s ease;
+}
+
+.skill-percentage:nth-child(6)::before {
+    width: 55%;
+    -webkit-animation: skill_6 0.6s ease;
+    animation: skill_6 0.6s ease;
+}
+
+@-webkit-keyframes skill_1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes skill_1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+@-webkit-keyframes skill_2 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes skill_2 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes skill_3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes skill_3 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+@-webkit-keyframes skill_4 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes skill_4 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes skill_5 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes skill_5 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes skill_6 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 55%;
+    }
+}
+
+@keyframes skill_6 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 55%;
+    }
+}
+
+.title-h3 {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    color: #66cc99;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#con {
+    resize: both;
+    overflow: hidden;
+    display: inline-block;
+    width: 20em;
+    height: 20em;
+    padding: 0.5em;
+}
+
+svg,
+svg * {
+    pointer-events: all;
+}
+
+path:nth-child(2) {
+    fill: #667F73;
+}
+
+path:nth-child(3) {
+    fill: #66CC99;
+}
+
+path:nth-child(4) {
+    fill: #7FFFBF;
+}
+
+path:nth-child(5) {
+    fill: #CCFFE5;
+}
+
+.skill-percentage,
+.other-skill-list {
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.skill-color {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+#technical-skill-color1 {
+    background-color: #667F73;
+}
+
+#technical-skill-color2 {
+    background-color: #66CC99;
+}
+
+#technical-skill-color3 {
+    background-color: #7FFFBF;
+}
+
+#technical-skill-color4 {
+    background-color: #CCFFE5;
+}
+
+.download-resume-div {
+    position: relative;
+    background-image: url("../images/parallax_download.jpeg");
+    background-size: cover;
+    height: 200px;
+    background-origin: border-box;
+    background-clip: padding-box;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#downloadTextDiv {
+    position: relative;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 25%;
+    border: 3px solid white;
+    width: 300px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#downloadTextDiv:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-div {
+    position: relative;
+    background-image: url("../images/parallax_contact.jpg");
+    background-size: cover;
+    height: 90vh;
+    background-origin: border-box;
+    background-clip: padding-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-text-div {
+    width: 50%;
+    height: 500px;
+    margin-top: 30px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#contact-title {
+    color: #3d3e42!important;
+    font-size: 2.2em;
+}
+
+.Myform {
+    width: 100%;
+    border: none!important;
+    border-bottom: 2px solid #3d3e42!important;
+    border-radius: 0px!important;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.label-form {
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+input {
+    color: black!important;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#send-button {
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-weight: 400;
+    color: #3d3e42;
+    border: 1.5px solid #3d3e42!important;
+}
+
+#send-button:hover {
+    color: #66cc99;
+    border: 1.5px solid #66cc99!important;
+    background-color: white!important;
+}
+
+.footer {
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    width: 100%;
+    background-color: #3d3e42;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #9099a0;
+}
