@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="JavaScript/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -43,13 +42,6 @@
     </section>
 
 
-    <!--header class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-        <div id="headerTextDiv" class="img-rounded">
-            <h1 id="page-title" class="text-center">MY PERSONAL WEBSITE</h1>
-        </div>
-    </header-->
-
-
     <div id="skill-div" class="screen-content col-sm-12 col-xs-12 col-sm-12 col-lg-12">
         <h2 id="skillTitle" class="text-center title-h2">SKILLS</h2>
 
@@ -59,9 +51,9 @@
         </div>
 
         <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-            <ul>
+            <ul class="skill-list">
                 <li class="skill-percentage col-sm-6 col-xs-6 col-sm-6 col-lg-6">HTML </li>
-                <li class="skill-percentage col-sm-6 col-xs-6 col-sm-6 col-lg-6">CSS </li>
+                <li class="skill-percentage col-sm-6 col-xs-6 col-sm-6 col-lg-6">CSS, SASS</li>
                 <li class="skill-percentage col-sm-6 col-xs-6 col-sm-6 col-lg-6">Javascript</li>
 
 
@@ -71,89 +63,75 @@
             </ul>
         </div>
 
-        <div class="col-sm-3 col-xs-3 col-sm-3 col-lg-3">
+        <div class="col-sm-6 col-xs-6 col-sm-6 col-lg-6">
             <h3 class="text-left title-h3">Other technical skills</h3>
-            <div id="con">
-                <svg width="100%" height="100%" id="chart1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 500">
-  <style type="text/css">
-    path:hover {
-      opacity: 0.8;
-    }
-  </style>
-</svg>
+            <div class="other-skills">
+                <ul class="fillup">
+                    <li class="item-1">
+                        <a href="#">
+                            <span class="title">.NET</span>
+                            <span class="percent">60%</span>
+                        </a>
+                    </li>
+                    <li class="item-2">
+                        <a href="#">
+                            <span class="title">Manual testing</span>
+                            <span class="percent">75%</span>
+                        </a>
+                    </li>
+                    <li class="item-3">
+                        <a href="#">
+                            <span class="title">Oracle SQL</span>
+                            <span class="percent">65%</span>
+                        </a>
+                    </li>
+                    <li class="item-4">
+                        <a href="#">
+                            <span class="title">SEO</span>
+                            <span class="percent">65%</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="col-sm-3 col-xs-3 col-sm-3 col-lg-3" id="technical-skills-div">
-            <br><br><br><br>
-            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-
-                <h4 class="other-skill-list">
-                    <div class="skill-color" id="technical-skill-color1"></div> .NET</h4>
-            </div>
-
-            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-
-                <h4 class="other-skill-list">
-                    <div class="skill-color" id="technical-skill-color2"></div> Manual Testing</h4>
-            </div>
-
-            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-
-                <h4 class="other-skill-list">
-                    <div class="skill-color" id="technical-skill-color3"></div> Oracle SQL</h4>
-            </div>
-
-            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-
-                <h4 class="other-skill-list">
-                    <div class="skill-color" id="technical-skill-color4"></div> SEO</h4>
-            </div>
-
-        </div>
 
 
-        <div class="col-sm-3 col-xs-3 col-sm-3 col-lg-3">
+        <div class="col-sm-6 col-xs-6 col-sm-6 col-lg-6">
             <h3 class="text-left title-h3">Personal skills</h3>
-            <div id="con">
-                <!-- the div container is of course optional. It is used with 
-     {width,height}="100%" below to make the chart resizable. -->
-                <svg width="100%" height="100%" id="chart2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 500">
-  <style type="text/css">
-    path:hover {
-      box-shadow:0 1px 1px rgba(0,0,0,.075);
-    }
-  </style>
-</svg>
-            </div>
-        </div>
-        <div class="col-sm-3 col-xs-3 col-sm-3 col-lg-3" id="technical-skills-div">
-            <br><br><br><br>
-            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-
-                <h4 class="other-skill-list">
-                    <div class="skill-color" id="technical-skill-color1"></div> Problem solving</h4>
-            </div>
-
-            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-
-                <h4 class="other-skill-list">
-                    <div class="skill-color" id="technical-skill-color2"></div> Attentive to details</h4>
-            </div>
-
-            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-
-                <h4 class="other-skill-list">
-                    <div class="skill-color" id="technical-skill-color3"></div> Leadership</h4>
-            </div>
-
-            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12">
-
-                <h4 class="other-skill-list">
-                    <div class="skill-color" id="technical-skill-color4"></div> Analytically minded.</h4>
+            <div class="other-skills">
+                <ul class="fillup">
+                    <li class="item-12">
+                        <a href="#">
+                            <span class="title">Problem solving</span>
+                            <span class="percent">90%</span>
+                        </a>
+                    </li>
+                    <li class="item-22">
+                        <a href="#">
+                            <span class="title">Attentive to details</span>
+                            <span class="percent">85%</span>
+                        </a>
+                    </li>
+                    <li class="item-32">
+                        <a href="#">
+                            <span class="title">Leadership</span>
+                            <span class="percent">75%</span>
+                        </a>
+                    </li>
+                    <li class="item-42">
+                        <a href="#">
+                            <span class="title">Analytically minded</span>
+                            <span class="percent">80%</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
         </div>
     </div>
+
+
+
 
     <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12 download-resume-div">
         <div id="downloadTextDiv" class="img-rounded">
@@ -166,16 +144,95 @@
         <h2 class="text-center title-h2">MY PROJECTS</h2>
         <div class="col-sm-4 col-xs-4 col-sm-4 col-lg-4">
             <h3 class="text-center title-h3">Mortgage Calculator</h3>
-            <img class="img-responsive" src="projects/Calculator.png">
+            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12 project-images">
+                <img class="img-responsive image-projects" src="projects/Calculator.png">
+                <div class="middle-text-image">
+                    <button type="button" class="images-button text-image" data-toggle="modal" data-target="#myModal1">Learn more</button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="title-modal-h3">Mortgage Calculator</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
         <div class="col-sm-4 col-xs-4 col-sm-4 col-lg-4">
             <h3 class="text-center title-h3">Cars' Table</h3>
-            <img class="img-responsive" src="projects/CarTable.png">
+            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12 project-images">
+                <img class="img-responsive image-projects" src="projects/CarTable.png">
+                <div class="middle-text-image">
+                    <button type="button" class="images-button text-image" data-toggle="modal" data-target="#myModal2">Learn more</button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="title-modal-h3">Cars' Table</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="col-sm-4 col-xs-4 col-sm-4 col-lg-4">
             <h3 class="text-center title-h3">Recruiting Agency</h3>
-            <img class="img-responsive" src="projects/RecrutingAgency.png">
+            <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12 project-images">
+                <img class="img-responsive image-projects" src="projects/RecrutingAgency.png">
+
+                <div class="middle-text-image">
+                    <button type="button" class="images-button text-image" data-toggle="modal" data-target="#myModal3">Learn more</button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal3" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="title-modal-h3">Recruiting Agency</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -225,117 +282,6 @@
 
         <h6 class="footer-text">&copy; Copyright Harkusha Vadym 2017</h6>
     </div>
-
-
-
-    <script>
-        function makeSVG(tag, attrs) {
-            var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
-            for (var k in attrs)
-                if (attrs.hasOwnProperty(k)) el.setAttribute(k, attrs[k]);
-            return el;
-        }
-
-        function drawArcs(paper, pieData) {
-            var total = pieData.reduce(function(accu, that) {
-                return that + accu;
-            }, 0);
-            var sectorAngleArr = pieData.map(function(v) {
-                return 360 * v / total;
-            });
-
-            var startAngle = 0;
-            var endAngle = 0;
-            for (var i = 0; i < sectorAngleArr.length; i++) {
-                startAngle = endAngle;
-                endAngle = startAngle + sectorAngleArr[i];
-
-                var x1, x2, y1, y2;
-
-                x1 = parseInt(Math.round(200 + 195 * Math.cos(Math.PI * startAngle / 180)));
-                y1 = parseInt(Math.round(200 + 195 * Math.sin(Math.PI * startAngle / 180)));
-
-                x2 = parseInt(Math.round(200 + 195 * Math.cos(Math.PI * endAngle / 180)));
-                y2 = parseInt(Math.round(200 + 195 * Math.sin(Math.PI * endAngle / 180)));
-
-                var d = "M200,200  L" + x1 + "," + y1 + "  A195,195 0 " +
-                    ((endAngle - startAngle > 180) ? 1 : 0) + ",1 " + x2 + "," + y2 + " z";
-                //alert(d); // enable to see coords as they are displayed
-                var c = parseInt(i / sectorAngleArr.length * 360);
-                var arc = makeSVG("path", {
-                    d: d,
-                    fill: "hsl(" + c + ", 66%, 50%)"
-                });
-                paper.appendChild(arc);
-
-            }
-        }
-
-        var svgdoc = document.getElementById("chart2");
-        drawArcs(svgdoc, [26, 26, 26, 22]); // here is the pie chart data// here is the pie chart data
-
-
-
-        // You can attach additional content (from e.g. AJAX) like this:
-        var parser = new DOMParser();
-        Array.prototype.slice.call(docToEmbed.documentElement.childNodes).forEach(function(elem) {
-            svgdoc.appendChild(document.importNode(elem, true));
-        });
-    </script>
-
-    <script>
-        function makeSVG(tag, attrs) {
-            var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
-            for (var k in attrs)
-                if (attrs.hasOwnProperty(k)) el.setAttribute(k, attrs[k]);
-            return el;
-        }
-
-        function drawArcs(paper, pieData) {
-            var total = pieData.reduce(function(accu, that) {
-                return that + accu;
-            }, 0);
-            var sectorAngleArr = pieData.map(function(v) {
-                return 360 * v / total;
-            });
-
-            var startAngle = 0;
-            var endAngle = 0;
-            for (var i = 0; i < sectorAngleArr.length; i++) {
-                startAngle = endAngle;
-                endAngle = startAngle + sectorAngleArr[i];
-
-                var x1, x2, y1, y2;
-
-                x1 = parseInt(Math.round(200 + 195 * Math.cos(Math.PI * startAngle / 180)));
-                y1 = parseInt(Math.round(200 + 195 * Math.sin(Math.PI * startAngle / 180)));
-
-                x2 = parseInt(Math.round(200 + 195 * Math.cos(Math.PI * endAngle / 180)));
-                y2 = parseInt(Math.round(200 + 195 * Math.sin(Math.PI * endAngle / 180)));
-
-                var d = "M200,200  L" + x1 + "," + y1 + "  A195,195 0 " +
-                    ((endAngle - startAngle > 180) ? 1 : 0) + ",1 " + x2 + "," + y2 + " z";
-                //alert(d); // enable to see coords as they are displayed
-                var c = parseInt(i / sectorAngleArr.length * 360);
-                var arc = makeSVG("path", {
-                    d: d,
-                    fill: "hsl(" + c + ", 66%, 50%)"
-                });
-                paper.appendChild(arc);
-            }
-        }
-
-        var svgdoc = document.getElementById("chart1");
-        drawArcs(svgdoc, [30, 20, 22, 28]);
-
-
-
-        // You can attach additional content (from e.g. AJAX) like this:
-        var parser = new DOMParser();
-        Array.prototype.slice.call(docToEmbed.documentElement.childNodes).forEach(function(elem) {
-            svgdoc.appendChild(document.importNode(elem, true));
-        });
-    </script>
 </body>
 
 </html>

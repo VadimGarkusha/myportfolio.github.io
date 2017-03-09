@@ -20,25 +20,13 @@ body
   color: #3d3e42 !important
 
 .title-h2
-  margin-top: 20px
+  margin-top: 75px
   font-size: 2.5em
   font-weight: 300 !important
   font-family: 'Open Sans', 'Lato', sans-serif
 
 h2
   color: white !important
-
-/*header
-  position: relative
-  background-image: url("../images/head.jpg")
-  background-size: cover
-  height: 100vh
-  background-origin: border-box
-  background-clip: padding-box
-  min-height: 200px
-  background-attachment: fixed
-  background-position: center
-  background-repeat: no-repeat*/
 
 
 
@@ -57,15 +45,16 @@ h2
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1)
 
 .et-header--scrolled
-  background: #eee
+  background: rgb(82, 89, 107)
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+  color: #eee!important
 
 .et-header--move-up
   transform: translateY(-75px)
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1)
 
 .et-header_logo
-  color: #000
+  color: #eee
 
 .et-header_link
   margin-left: 1em
@@ -181,13 +170,16 @@ h2
   margin-right: auto
   margin-left: auto
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-  color: #9099a0
+  color: #eee
 
 .row
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 
 ul
   list-style: none
+
+#skill-div
+  height: 110vh
 
 .skill-percentage
   margin-bottom: 30px
@@ -200,13 +192,16 @@ ul
     background: #4a4e51
     display: block
     margin-top: 3px
-  &::before
-    content: ""
-    height: 6px
-    background: #66cc99
-    position: absolute
-    margin-top: 3px
-    bottom: 0
+  
+.skill-percentage.level::before
+  content: ""
+  height: 6px
+  background: #66cc99
+  position: absolute
+  margin-top: 3px
+  bottom: 0  
+
+.skill-percentage.level
   &:nth-child(1)::before
     width: 85%
     -webkit-animation: skill_1 0.6s ease
@@ -231,6 +226,7 @@ ul
     width: 55%
     -webkit-animation: skill_6 0.6s ease
     animation: skill_6 0.6s ease
+
 
 @-webkit-keyframes skill_1
   from
@@ -328,56 +324,125 @@ ul
     width: 55%
 
 
+
+
+
+.other-skills
+  border-left: 4px solid #eee
+  padding-left: 15px!important
+  width: 100%!important
+  margin-left: 15px
+
+
+.fillup
+  overflow: hidden
+  width: 400px
+  li
+    margin: 3px 0
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+  a
+    color: #EEE!important
+    display: block
+    padding: 10px
+    position: relative
+    text-decoration: none!important
+
+    text-transform: uppercase
+
+.title, .percent
+  font-family: Open Sans, 'Lato', sans-serif
+  font-weight: 300
+
+.fillup
+  a span
+    position: relative
+    -webkit-transition: all 300ms ease
+    -moz-transition: all 300ms ease
+    -ms-transition: all 300ms ease
+    transition: all 300ms ease
+    z-index: 10
+  a:hover .title
+    color: #fff
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3)
+  .percent
+    color: rgba(255, 255, 255, 0)
+    float: right
+  a:hover .percent
+    color: rgba(255, 255, 255, 0.9)
+
+.item-1
+  background: rgba(80, 178, 157, 0.2)
+  width: 60%
+
+.item-12
+  background: rgba(80, 178, 157, 0.2)
+  width: 90%
+
+.item-2
+  background: rgba(102, 204, 153, 0.2)
+  width: 75%
+
+.item-22
+  background: rgba(102, 204, 153, 0.2)
+  width: 85%
+
+.item-3
+  background: rgba(80, 178, 102, 0.2)
+  width: 65%
+
+.item-32
+  background: rgba(80, 178, 102, 0.2)
+  width: 75%
+
+
+.item-4
+  background: rgba(83, 168, 76, 0.2)
+  width: 65%
+
+.item-42
+  background: rgba(83, 168, 76, 0.2)
+  width: 80%
+
+.fillup
+  a:before
+    content: " "
+    height: 100%
+    position: absolute
+    right: 100%
+    top: 0
+    width: 100%
+    -webkit-transition: -webkit-transform 400ms ease
+    -moz-transition: -moz-transform 400ms ease
+    -ms-transition: -ms-transform 400ms ease
+    transition: transform 400ms ease
+  .item-1 a:before, .item-12 a:before
+    background: rgb(80, 178, 157)
+  .item-2 a:before, .item-22 a:before
+    background: rgb(102, 204, 153)
+  .item-3 a:before, .item-32 a:before
+    background: rgb(80, 178, 102)
+  .item-4 a:before, .item-42 a:before
+    background: rgb(83, 168, 76)
+  li:hover a:before
+    -webkit-transform: translate3d(100%, 0, 0)
+    -moz-transform: translate3d(100%, 0, 0)
+    -ms-transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0)
+
+
+
+
+
+
+
+
 .title-h3
   margin-left: 15px
   margin-bottom: 20px
   color: #66cc99
   font-family: 'Open Sans', 'Lato', sans-serif
   font-weight: 300
-
-#con
-  resize: both
-  overflow: hidden
-  display: inline-block
-  width: 20em
-  height: 20em
-  padding: 0.5em
-
-svg
-  pointer-events: all
-  *
-    pointer-events: all
-
-path
-  &:nth-child(2)
-    fill: #667F73
-  &:nth-child(3)
-    fill: #66CC99
-  &:nth-child(4)
-    fill: #7FFFBF
-  &:nth-child(5)
-    fill: #CCFFE5
-
-.skill-percentage, .other-skill-list
-  font-family: 'Open Sans', 'Lato', sans-serif
-  font-weight: 300
-
-.skill-color
-  display: inline-block
-  height: 20px
-  width: 20px
-
-#technical-skill-color1
-  background-color: #667F73
-
-#technical-skill-color2
-  background-color: #66CC99
-
-#technical-skill-color3
-  background-color: #7FFFBF
-
-#technical-skill-color4
-  background-color: #CCFFE5
 
 .download-resume-div
   position: relative
@@ -403,6 +468,65 @@ path
   &:hover
     background-color: rgba(255, 255, 255, 0.8)
 
+
+//MY PROJECTS
+.project-images
+  position: relative
+  padding: 0!important
+
+.image-projects
+  opacity: 1
+  display: block
+  width: 100%
+  height: auto
+  transition: .5s ease
+  backface-visibility: hidden
+
+.middle-text-image
+  transition: .5s ease
+  opacity: 0
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+
+.project-images:hover
+  .image-projects
+    opacity: 0.3
+  .middle-text-image
+    opacity: 1
+
+.text-image
+  font-size: 16px
+  padding: 16px 32px
+
+.images-button
+  background-color: white
+  color: black
+  border: 2px solid #66cc99
+  font-family: 'Open Sans', 'Lato', sans-serif
+  font-weight: 300
+  padding: 15px 32px
+  text-align: center
+  text-decoration: none
+  font-size: 16px
+  &:hover 
+    background-color: #66cc99
+    color: white
+  &:focus
+    outline: 0
+
+.modal-content
+  background-color: #eee!important
+
+.title-modal-h3
+  color: #353945
+  font-family: 'Open Sans', 'Lato', sans-serif
+  font-weight: 300
+
+
+//CONTACT
 .contact-div
   position: relative
   background-image: url("../images/parallax_contact.jpg")
@@ -418,7 +542,7 @@ path
 .contact-text-div
   width: 50%
   height: 500px
-  margin-top: 30px
+  margin-top: 70px
   background-color: rgb(82, 89, 107)
   border-radius: 5px
   margin-left: auto
@@ -429,6 +553,7 @@ path
   color: white !important
   font-size: 2.2em
   font-weight: 400
+  margin-top: 20px!important
 
 .Myform
   width: 100%
@@ -450,6 +575,29 @@ input,textarea
 
 textarea:focus, input:focus
   outline: none
+
+*::-webkit-input-placeholder  
+  color: #eee
+  font-family: 'Open Sans', 'Lato', sans-serif
+  font-weight: 300
+
+*:-moz-placeholder  
+  color: #eee
+  opacity: 1
+  font-family: 'Open Sans', 'Lato', sans-serif
+  font-weight: 300
+
+*::-moz-placeholder  
+  color: #eee
+  opacity:  1
+  font-family: 'Open Sans', 'Lato', sans-serif
+  font-weight: 300
+
+*:-ms-input-placeholder  
+  color: #eee
+  font-family: 'Open Sans', 'Lato', sans-serif
+  font-weight: 300
+
 
 #send-button
   font-family: 'Open Sans', 'Lato', sans-serif
@@ -474,6 +622,8 @@ textarea:focus, input:focus
 .footer-text
   text-align: center
   margin-top: -2px
+  color: #eee
+
 
 
 
