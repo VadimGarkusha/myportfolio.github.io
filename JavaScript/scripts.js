@@ -13,7 +13,7 @@ function NonActiveName(i) {
     if (input.value == "") {
         document.getElementsByClassName("label-form")[i].style.color = "rgb(82, 89, 107)";
     } else {
-        document.getElementsByClassName("label-form")[i].style.color = "#3d3e42";
+        document.getElementsByClassName("label-form")[i].style.color = "#eee";
     }
     input.setAttribute("style", "width: 100%; border: none!important; border-bottom: 2px solid white!important; border-radius: 0px!important; padding-left: 10px; padding-bottom: 5px; margin-top: 5px;");
 }

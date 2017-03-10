@@ -14,15 +14,6 @@
     <script src="JavaScript/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -31,8 +22,9 @@
             <a href="#" class="et-header_logo">Vadym Harkusha</a>
         </div>
     </header>
-    <section class="et-hero-tabs">
+    <section class="et-hero-tabs ">
         <h1 id="page-title">MY PERSONAL WEBSITE</h1>
+
         <div class="et-hero-tabs-container">
             <a class="et-hero-tab" href="#skill-div">Skills</a>
             <a class="et-hero-tab" href="#projects-div">My projects</a>
@@ -242,24 +234,24 @@
                 <h2 id="contact-title" class="text-center title-h2">
                     CONTACT ME
                 </h2>
-                <form class="form-group-md">
+                <form class="form-group-md" action="">
                     <div class="form-group">
                         <labelv class="label-form" for="usr">Name:</label>
-                            <input type="text" class="Myform" id="usr" placeholder="Your name" onfocus="ActiveName(0)" onfocusout="NonActiveName(0)">
+                            <input type="text" name="name" class="Myform" id="usr" placeholder="Your name" onfocus="ActiveName(0)" onfocusout="NonActiveName(0)" autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <label class="label-form" for="email">Email:	&nbsp;</label>
-                        <input type="email" class="Myform" id="email" placeholder="Your email" onfocus="ActiveName(1)" onfocusout="NonActiveName(1)">
+                        <input type="email" name="email" class="Myform" id="email" placeholder="Your email" onfocus="ActiveName(1)" onfocusout="NonActiveName(1)" autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <label class="label-form" for="pwd">Subject:	&nbsp;</label>
-                        <input type="text" class="Myform" id="sbj" placeholder="Subject" onfocus="ActiveName(2)" onfocusout="NonActiveName(2)">
+                        <input type="text" name="subject" class="Myform" id="sbj" placeholder="Subject" onfocus="ActiveName(2)" autocomplete="off" onfocusout="NonActiveName(2)">
                     </div>
                     <div class="form-group">
                         <label class="label-form" for="comment">Message:	&nbsp;</label>
-                        <textarea class="Myform" rows="5" id="comment" placeholder="Message..." onfocus="ActiveName(3)" onfocusout="NonActiveName(3)"></textarea>
+                        <textarea class="Myform" name="message" rows="5" id="comment" placeholder="Message..." onfocus="ActiveName(3)" autocomplete="off" onfocusout="NonActiveName(3)"></textarea>
                     </div>
-                    <button id="send-button" class="btn btn-default btn-lg btn-block" type="submit" class="btn btn-default">SEND MESSAGE</button>
+                    <a href="mailto:vadgig@gmail.com" data-rel="external"><button id="send-button" class="btn btn-default btn-lg btn-block" type="submit" class="btn btn-default">SEND MESSAGE</button></a>
                 </form>
             </div>
         </div>
