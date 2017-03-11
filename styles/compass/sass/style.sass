@@ -174,8 +174,6 @@ h2
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
   color: #eee
 
-.row
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 
 ul
   list-style: none
@@ -519,13 +517,63 @@ ul
   &:focus
     outline: 0
 
+//Modal window 
 .modal-content
   background-color: #eee!important
+  border-bottom-left-radius: 3px!important
+  border-bottom-right-radius: 3px!important
+  border-top-right-radius: 3px!important
+  border-top-left-radius: 3px!important
+
+.modal-body
+  height: 100%
+  font-weight: 300
 
 .title-modal-h3
+  color: #66cc99
+  font-family: 'Open Sans', 'Lato', sans-serif
+  font-weight: 300
+
+.modal-window-p, .modal-window-h3
+  color: rgb(82, 89, 107)
+
+.modal-link
   color: #353945
   font-family: 'Open Sans', 'Lato', sans-serif
   font-weight: 300
+
+.modal-half-div
+  position: relative
+
+.btn-close-modal
+  font-family: 'Open Sans', 'Lato', sans-serif
+  font-weight: 400
+  color: white!important
+  border: 2px solid #fff!important
+  background-color: #353945!important
+  &:hover
+    color: #66cc99!important
+    border: 2px solid #66cc99!important
+    background-color: #353945!important
+
+.modal-header
+  background-color: #353945
+  border-bottom: 2px solid #66cc99!important
+
+.modal-footer
+  border-top: 2px solid #66cc99!important
+  background-color: #353945
+
+button.close
+  text-shadow: none
+  color: #fff!important
+  font-weight: 300!important
+  font-size: 30px!important
+  opacity: 1!important
+  &:hover
+    color: #66cc99!important
+
+
 
 
 //CONTACT
@@ -613,6 +661,8 @@ textarea:focus, input:focus
     border: 2px solid #66cc99 !important
     background-color: rgb(82, 89, 107)!important
 
+
+//FOOTER
 .footer
   font-family: 'Open Sans', 'Lato', sans-serif
   width: 100%
@@ -686,10 +736,33 @@ html
       @extend %social-icon-hover
 
 
-@-moz-document url-prefix() 
+@-moz-document url-prefix()
   .et-hero-tabs-container
     margin-left: -50%
+
+@media screen and (max-width:768px) 
+  #skill-div, #projects-div
+    height: 100%
+  .other-skills-div
+    margin-bottom: 30px
+  .project-div
+    width: 100%!important
+    margin-bottom: 25px
+  .image-projects
+    max-height: 500px
+    width: auto
+    margin-left: auto!important
+    margin-right: auto!important
+  .contact-div
+    height: 100%
+  .contact-text-div
+    margin-bottom: 70px
+    width: 80%
     
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
-  .et-hero-tabs-container
-    margin-left: -50%
+@media screen and (max-width:360px) 
+  .level
+    width: 100%!important
+  .other-skills-div
+    width: 100%!important
+  
+
