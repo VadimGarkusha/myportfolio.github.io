@@ -12,7 +12,8 @@ body
   margin-top: 0px
   position: relative
 
-
+.logo-image
+  width: 50px
 
 #page-title
   font-size: 2.5em
@@ -43,7 +44,7 @@ h2
   right: 0
   padding: 0 2em
   height: 50px
-  z-index: 2
+  z-index: 11
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1)
 
 .et-header--scrolled
@@ -57,6 +58,14 @@ h2
 
 .et-header_logo
   color: #eee
+  text-decoration: none!important
+  &:hover
+    text-decoration: none!important
+    color: #eee
+  &:active
+    text-decoration: none!important
+  &:visited
+    text-decoration: none!important
 
 .et-header_link
   margin-left: 1em
@@ -444,6 +453,13 @@ ul
   font-family: 'Open Sans', 'Lato', sans-serif
   font-weight: 300
 
+.download-text
+  font-size: 2.5em
+  font-family: 'Lato', sans-serif
+  font-weight: 300 !important
+  margin: 7px !important
+  color: #3d3e42 !important
+
 .download-resume-div
   position: relative
   background-image: url("../images/parallax_download.jpg")
@@ -457,16 +473,32 @@ ul
   background-repeat: no-repeat
 
 #downloadTextDiv
-  position: relative
+
   color: white
   background-color: rgba(255, 255, 255, 0.5)
-  top: 25%
+
   border: 3px solid white
   width: 300px
-  margin: auto
+
   cursor: pointer
   &:hover
     background-color: rgba(255, 255, 255, 0.8)
+
+.download-link
+  text-decoration: none!important
+  &:hover
+    text-decoration: none!important
+  &:active
+    text-decoration: none!important
+  &:visited
+    text-decoration: none!important
+
+.download-block-position
+  margin: auto
+  width: 300px
+  top: 25%
+  position: relative
+
 
 
 //MY PROJECTS
@@ -542,8 +574,6 @@ ul
   font-family: 'Open Sans', 'Lato', sans-serif
   font-weight: 300
 
-.modal-half-div
-  position: relative
 
 .btn-close-modal
   font-family: 'Open Sans', 'Lato', sans-serif
@@ -573,6 +603,10 @@ button.close
   &:hover
     color: #66cc99!important
 
+.modal-image
+  margin-top: auto
+  margin-bottom: auto
+
 
 
 
@@ -581,7 +615,7 @@ button.close
   position: relative
   background-image: url("../images/parallax_contact.jpg")
   background-size: cover
-  height: 90vh
+  height: 95vh
   background-origin: border-box
   background-clip: padding-box
   background-attachment: fixed
@@ -740,7 +774,54 @@ html
   .et-hero-tabs-container
     margin-left: -50%
 
-@media screen and (max-width:768px) 
+@media screen and (max-width:2560px) and (min-width: 1920px)
+  .contact-div
+    max-height: 650px!important
+  .contact-text-div
+    width: 30%
+    max-width: 550px
+  #skill-div
+    height: 100%!important
+    padding-bottom: 30px
+  #projects-div
+    height: 100%!important
+    padding-bottom: 50px
+
+@media screen and (max-width:2560px) and (min-width: 1400px)
+  .contact-div
+    max-height: 650px!important
+  .contact-text-div
+    width: 45%
+    max-width: 550px
+  #skill-div
+    height: 100%!important
+    padding-bottom: 30px
+  #projects-div
+    height: 100%!important
+    padding-bottom: 50px
+
+@media screen and (max-width:1400px) and (min-width: 1000px)
+  #skill-div
+    height: 100%!important
+    padding-bottom: 30px
+  .contact-div
+    min-height: 630px!important
+  #projects-div
+    height: 100%!important
+    padding-bottom: 50px
+
+@media screen and (max-width:1000px) and (min-width: 900px)
+  #skill-div
+    height: 100%!important
+    padding-bottom: 30px
+  .contact-div
+    height: 100%
+    padding-bottom: 75px
+  #projects-div
+    max-height: 590px!important
+
+
+@media screen and (max-width: 900px) and (min-width: 550px)
   #skill-div, #projects-div
     height: 100%
   .other-skills-div
@@ -758,11 +839,88 @@ html
   .contact-text-div
     margin-bottom: 70px
     width: 80%
-    
-@media screen and (max-width:360px) 
-  .level
+  .modal-half-div
     width: 100%!important
+  .modal-half-div:nth-child(2)
+    margin-top: 20px
+
+
+@media screen and (max-width: 550px) and (min-width: 400px)
+  #skill-div, #projects-div
+    height: 100%
+  .other-skills-div
+    margin-bottom: 30px
+  .project-div
+    width: 100%!important
+    margin-bottom: 25px
+  .image-projects
+    max-height: 500px
+    width: auto
+    margin-left: auto!important
+    margin-right: auto!important
+  .contact-div
+    height: 100%
+  .contact-text-div
+    margin-bottom: 70px
+    width: 80%
+  .modal-half-div
+    width: 100%!important
+  .modal-half-div:nth-child(2)
+    margin-top: 20px
   .other-skills-div
     width: 100%!important
+
+    
+@media screen and (max-width: 400px) and (min-width: 325px)
+  #skill-div, #projects-div
+    height: 100%
+  .level
+    width: 100%!important
+  #skill-div
+    padding-bottom: 15px
+  .other-skills-div, .contact-text-div
+    width: 100%!important
+  .download-text
+    font-size: 2em
+  .download-resume-div
+    height: 170px
+  .contact-text-div
+    margin-left: 0
+    margin-right: 0
+  .project-div
+    width: 100%!important
+    margin-bottom: 25px
+  .contact-div
+    height: 100%
+  .contact-text-div
+    margin-bottom: 70px
+  .soc li
+    margin: 6px  8px// IE8
+    margin: 0.6rem 0.6rem
+
+@media screen and (max-width:320px) and (min-width: 100px)
+  .level
+    width: 100%!important
+  #skill-div, #projects-div
+    height: 100%
+    padding-bottom: 15px
+  .other-skills-div, .contact-text-div
+    width: 100%!important
+  .download-resume-div
+    height: 100px
+  .download-text
+    font-size: 1.6em
+  .contact-div
+    height: 100%
+  .contact-text-div
+    margin-bottom: 70px
+  .soc li
+    margin: 6px  8px// IE8
+    margin: 0.6rem 0.6rem
+  .project-div
+    width: 100%!important
+
+
+
   
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Vadym Harkusha | Web Designer</title>
-    <!--link rel="shortcut icon" href="images/ico.ico" type="image/x-icon"-->
+    <link rel="shortcut icon" href="styles/images/icon.ico" type="image/x-icon">
     <link href="styles/css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
     <header class="et-header">
         <div class="et-header_left">
-            <a href="#" class="et-header_logo">Vadym Harkusha</a>
+            <a href="#" class="et-header_logo"><img class="logo-image" src="styles/images/logo.png"></a>
         </div>
     </header>
     <section class="et-hero-tabs ">
@@ -126,8 +126,12 @@
 
 
     <div class="col-sm-12 col-xs-12 col-sm-12 col-lg-12 download-resume-div">
-        <div id="downloadTextDiv" class="img-rounded">
-            <h3 id="page-title" class="text-center title-h3">DOWNLOAD MY RESUME</h3>
+        <div class="download-block-position">
+            <a href="download/ResumeFrontEnd.pdf" download class="download-link">
+                <div id="downloadTextDiv" class="img-rounded">
+                    <h3 class="text-center title-h3 download-text">DOWNLOAD MY RESUME</h3>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -170,7 +174,7 @@
                                     </div>
 
                                     <div class="col-sm-6 col-xs-6 col-sm-6 col-lg-6 modal-half-div">
-                                        <img class="img-responsive" src="projects/Calculator.png">
+                                        <img class="img-responsive modal-image" src="projects/Calculator.png">
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +224,7 @@
                                     </div>
 
                                     <div class="col-sm-6 col-xs-6 col-sm-6 col-lg-6 modal-half-div">
-                                        <img class="img-responsive" src="projects/CarTable.png">
+                                        <img class="img-responsive modal-image" src="projects/CarTable.png">
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +271,7 @@
                                     </div>
 
                                     <div class="col-sm-6 col-xs-6 col-sm-6 col-lg-6 modal-half-div">
-                                        <img class="img-responsive" src="projects/RecrutingAgency.png">
+                                        <img class="img-responsive modal-image" src="projects/RecrutingAgency.png">
                                     </div>
                                 </div>
                             </div>
